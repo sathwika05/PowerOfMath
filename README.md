@@ -404,13 +404,18 @@ html
 
 
 ```
+![Step 39](images/39.png)
 
 8. Re-deploy HTML Page Using AWS Amplify
 Zip the updated index.html file.
+![Step 40](images/40.png)
 Go back to AWS Amplify, upload the new zip file, and redeploy the app to the dev environment.
-9. Test the Application
+![Step 41](images/41.png)
+10. Test the Application
 Click on the generated Amplify domain URL to see your exponentiation calculator in action.
+![Step 42](images/42.png)
 Enter a base and exponent to get the result, which will also be saved in DynamoDB.
+![Step 43](images/43.png)
 Technologies Used:
 AWS Amplify: For hosting the web app.
 AWS Lambda: To perform the exponentiation math operation.
