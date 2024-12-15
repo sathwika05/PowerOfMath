@@ -120,6 +120,11 @@ json
 - Copy the Invoke URL generated after deployment.
  
    ![Step 23](images/23.png)
+
+- Test the integration by going to the Test tab.
+
+  ![Step 24](images/24.png)
+  ![Step 25](images/25.png)
   
 5. Update Lambda Permissions for DynamoDB
 Navigate to the DynamoDB Console and create a new table with ID as the partition key.
