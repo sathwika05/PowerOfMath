@@ -1,6 +1,6 @@
 
 # Power of Math Project with AWS Amplify, Lambda, API Gateway, and DynamoDB
-This project demonstrates how to build a web app that performs exponentiation calculations using AWS services including Amplify, Lambda, API Gateway, and DynamoDB.
+This project demonstrates how to build a web app that performs exponentiation calculations using AWS services, including Amplify for hosting, Lambda for serverless computation, API Gateway for exposing the Lambda function as an API, and DynamoDB for storing the results.
 
 ![cloud architecture](images/cloud-architecture.png)
 
