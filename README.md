@@ -90,15 +90,36 @@ json
 
 ![Step 12](images/12.png)
 4. Set Up API Gateway
-Navigate to the API Gateway Console.
+- Navigate to the API Gateway Console.
 
 ![Step 13](images/13.png)
 
-Create a new REST API and give it a name (e.g., PowerOfMathAPI).
-Create a new resource (e.g., /exponentiation), and enable CORS.
-Create a new POST method for this resource, integrating it with the Lambda function you just created.
-Deploy the API to a new stage (e.g., dev).
-Copy the Invoke URL generated after deployment.
+- Create a new REST API. Click on Build.
+
+![Step 14](images/14.png)
+  
+-  Give it a name (e.g., PowerOfMathAPI).
+- ![Step 15](images/15.png)
+- Create a new resource (e.g., /pow-of-math), and enable CORS.
+ ![Step 16](images/16.png)
+- Create a new POST method for this resource,
+ ![Step 17](images/17.png)
+
+-   Integrating it with the Lambda function and click on Create method.
+  
+   ![Step 18](images/18.png)
+
+- For enabling CORS on this method. Click on /pow-of-math and select Enable CORS.
+
+   ![Step 19](images/19.png)
+
+- Select Access-Control-Allow-Methods as POST and save
+    ![Step 20](images/20.png)
+- Deploy the API to a new stage (e.g., dev).
+   ![Step 21](images/21.png)
+- Copy the Invoke URL generated after deployment.
+   ![Step 22](images/22.png)
+   ![Step 23](images/23.png)
 5. Update Lambda Permissions for DynamoDB
 Navigate to the DynamoDB Console and create a new table with ID as the partition key.
 Copy the ARN of the table.
