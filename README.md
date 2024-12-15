@@ -416,8 +416,8 @@ Click on the generated Amplify domain URL to see your exponentiation calculator 
 ![Step 42](images/42.png)
 Enter a base and exponent to get the result, which will also be saved in DynamoDB.
 ![Step 43](images/43.png)
-Technologies Used:
-AWS Amplify: For hosting the web app.
-AWS Lambda: To perform the exponentiation math operation.
-AWS API Gateway: To expose the Lambda function as an API.
-AWS DynamoDB: To store the calculation results.
+
+
+## Conclusion
+
+In conclusion, this serverless application leverages AWS Amplify, Lambda, API Gateway, and DynamoDB to provide a scalable, cost-effective solution for performing exponentiation calculations. By using these fully managed services, we eliminate the need for infrastructure management, ensuring automatic scalability, high availability, and reduced operational overhead. This approach simplifies development while providing a robust and efficient architecture, ideal for modern applications.
