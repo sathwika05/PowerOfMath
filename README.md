@@ -127,9 +127,19 @@ json
   ![Step 25](images/25.png)
   
 5. Update Lambda Permissions for DynamoDB
-Navigate to the DynamoDB Console and create a new table with ID as the partition key.
-Copy the ARN of the table.
-Go to the Execution Role of your Lambda function, and create an inline policy to allow write permissions to the DynamoDB table.
+- Navigate to the DynamoDB Console and create a new table with ID as the partition key.
+   ![Step 26](images/26.png)
+   ![Step 27](images/27.png)
+- Copy the ARN of the table.
+
+  ![Step 28](images/28.png)
+  
+- Go to the Execution Role of your Lambda function, and create an inline policy to allow write permissions to the DynamoDB table.
+
+  ![Step 29](images/29.png)
+  ![Step 30](images/30.png)
+  ![Step 31](images/31.png)
+  
 Here’s the policy you can use:
 
 json
@@ -152,10 +162,16 @@ Copy code
         }
     ]
 }
+
+![Step 32](images/32.png)
+![Step 33](images/33.png)
+![Step 34](images/34.png)
+![Step 35](images/35.png)
+
 6. Update Lambda Function to Write to DynamoDB
 Modify your Lambda function to save the result to DynamoDB:
 python
-Copy code
+```
 import json
 import math
 import boto3
@@ -177,8 +193,16 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': json.dumps('Your result is ' + str(mathResult))
     }
-Ensure the DynamoDB table name in the Lambda function matches your table.
-Click Deploy and test the function again.
+```
+![Step 36](images/36.png)
+
+- Ensure the DynamoDB table name in the Lambda function matches your table.
+![Step 37](images/37.png)
+
+- Click Deploy and test the function again.
+
+![Step 38](images/38.png)
+
 7. Update HTML to Call API Gateway
 Update the index.html page to integrate with API Gateway. Replace the fetch URL with your Invoke URL from API Gateway:
 html
