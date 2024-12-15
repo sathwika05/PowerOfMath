@@ -116,10 +116,11 @@ json
 - Select Access-Control-Allow-Methods as POST and save
     ![Step 20](images/20.png)
 - Deploy the API to a new stage (e.g., dev).
-   ![Step 21](images/21.png)
+    ![Step 22](images/22.png)
 - Copy the Invoke URL generated after deployment.
-   ![Step 22](images/22.png)
+ 
    ![Step 23](images/23.png)
+  
 5. Update Lambda Permissions for DynamoDB
 Navigate to the DynamoDB Console and create a new table with ID as the partition key.
 Copy the ARN of the table.
